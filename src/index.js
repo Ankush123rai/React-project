@@ -1,28 +1,19 @@
 
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
+import Comp1 from './Components/Comp1';
+import Comp2 from './Components/Comp2';
+import Comp3 from './Components/Comp3';
 import Heading1 from './Components/Heading1';
-import Heading2 from './Components/Heading2';
-import Heading3 from './Components/Heading3';
-import Button from './Components/Button';
-import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <section>
-        <h1>I am heading one ...from first component</h1>
-        <h2>I am heading two ...from second component</h2>
-        <h3>I am heading three ...from third component</h3>
-        <button>Click me</button>
-
-        <Heading1/>
-        <Heading2/>
-        <Heading3/>
-        <Button/>
+        <Heading1 heading="Register here..." button="submit"/>
+        <Comp1 heading="Register here.."/>
+        <Comp2/>
+        <Comp3 button="submit"/>
     </section>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

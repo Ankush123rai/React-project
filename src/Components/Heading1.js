@@ -1,8 +1,15 @@
 import React from "react";
 
-const Heading1 =()=>{
+const Heading1 =(props)=>{
     return (
-        <h1>I am heading one ...from first component</h1>
+        <div>
+            <h1>{props.heading}</h1>
+            <input type="text" placeholder="mobile" />
+            <br /><br />
+            <input type="text" placeholder="password" />
+            <br /><br />
+            <button>{props.button}</button>
+        </div>
     )
 }
  export default Heading1
